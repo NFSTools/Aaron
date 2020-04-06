@@ -1,0 +1,46 @@
+﻿<Window x:Class="Aaron.Dialogs.AddCarDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:fa5="http://schemas.fontawesome.com/icons/"
+        Title="Add Car" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen"
+        ContentRendered="Window_ContentRendered"
+        DataContext="{Binding Source={StaticResource Locator}, Path=AddCar}">
+    <Grid Margin="15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <fa5:SvgAwesome Icon="Solid_CarAlt" Width="32" Height="32" Grid.RowSpan="6" Margin="20, 10, 20, 0"></fa5:SvgAwesome>
+        <!--<Image Source="/WpfTutorialSamples;component/Images/question32.png" Width="32" Height="32" Grid.RowSpan="2" Margin="20,0" />-->
+
+        <Label Name="lblCarName" Grid.Column="1">Car Name:</Label>
+        <TextBox Name="txtCarName" 
+                 Grid.Column="1" Grid.Row="1" MinWidth="250" 
+                 AcceptsReturn="False" MaxLength="14" 
+                 Text="{Binding Path=CarName, UpdateSourceTrigger=PropertyChanged}"
+                 CharacterCasing="Upper"></TextBox>
+
+        <Label Name="lblCarType" Grid.Column="1" Grid.Row="2">Car Type:</Label>
+        <ComboBox SelectedItem="{Binding CarType}" Grid.Row="3" Grid.Column="1" ItemsSource="{Binding AvailableTypes}">
+        </ComboBox>
+
+        <Label Name="lblManufacturer" Grid.Column="1" Grid.Row="4">Manufacturer:</Label>
+        <ComboBox SelectedItem="{Binding Manufacturer}" Grid.Row="5" Grid.Column="1" ItemsSource="{Binding AvailableManufacturers}">
+        </ComboBox>
+
+        <WrapPanel Grid.Row="6" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,15,0,0">
+            <Button IsDefault="True" IsEnabled="{Binding CanSubmit}" Name="btnDialogOk" Click="btnDialogOk_Click" MinWidth="60" Margin="0,0,10,0">_Ok</Button>
+            <Button IsCancel="True" MinWidth="60" Click="Button_Click">_Cancel</Button>
+        </WrapPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,406 @@
+﻿{
+  "Entries": [
+    {
+      "Orientation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "W": 32767
+      },
+      "Position": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Flags": "kBounds_Box",
+      "HalfDimensions": {
+        "X": 940,
+        "Y": 617,
+        "Z": 2138
+      },
+      "NumChildren": 9,
+      "PCloudIndex": 255,
+      "Pivot": {
+        "X": 1,
+        "Y": 617,
+        "Z": -74
+      },
+      "ChildIndex": 1,
+      "AttributeName": 0,
+      "Surface": 0,
+      "NameHash": 0
+    },
+    {
+      "Orientation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "W": 32767
+      },
+      "Position": {
+        "X": 3,
+        "Y": -240,
+        "Z": 4
+      },
+      "Flags": "kBounds_PrimVsWorld, kBounds_PrimVsObjects, kBounds_Box",
+      "HalfDimensions": {
+        "X": 938,
+        "Y": 376,
+        "Z": 2147
+      },
+      "NumChildren": 0,
+      "PCloudIndex": 255,
+      "Pivot": {
+        "X": 4,
+        "Y": 376,
+        "Z": -69
+      },
+      "ChildIndex": -1,
+      "AttributeName": 0,
+      "Surface": 2581226801,
+      "NameHash": 0
+    },
+    {
+      "Orientation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "W": 32767
+      },
+      "Position": {
+        "X": 3,
+        "Y": 203,
+        "Z": -657
+      },
+      "Flags": "kBounds_PrimVsWorld, kBounds_PrimVsObjects, kBounds_Box",
+      "HalfDimensions": {
+        "X": 598,
+        "Y": 376,
+        "Z": 899
+      },
+      "NumChildren": 0,
+      "PCloudIndex": 255,
+      "Pivot": {
+        "X": 4,
+        "Y": 820,
+        "Z": -731
+      },
+      "ChildIndex": -1,
+      "AttributeName": 0,
+      "Surface": 2581226801,
+      "NameHash": 0
+    },
+    {
+      "Orientation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "W": 32767
+      },
+      "Position": {
+        "X": 755,
+        "Y": -434,
+        "Z": 1971
+      },
+      "Flags": "kBounds_PrimVsWorld, kBounds_Sphere",
+      "HalfDimensions": {
+        "X": 328,
+        "Y": 328,
+        "Z": 328
+      },
+      "NumChildren": 0,
+      "PCloudIndex": 255,
+      "Pivot": {
+        "X": 756,
+        "Y": 182,
+        "Z": 1896
+      },
+      "ChildIndex": -1,
+      "AttributeName": 0,
+      "Surface": 2581226801,
+      "NameHash": 0
+    },
+    {
+      "Orientation": {
+        "X": 23169,
+        "Y": -23169,
+        "Z": 0,
+        "W": 0
+      },
+      "Position": {
+        "X": 0,
+        "Y": 2,
+        "Z": 5
+      },
+      "Flags": "kBounds_MeshVsGround, kBounds_Box",
+      "HalfDimensions": {
+        "X": 606,
+        "Y": 902,
+        "Z": 2115
+      },
+      "NumChildren": 0,
+      "PCloudIndex": 0,
+      "Pivot": {
+        "X": 1,
+        "Y": 619,
+        "Z": -69
+      },
+      "ChildIndex": -1,
+      "AttributeName": 0,
+      "Surface": 2581226801,
+      "NameHash": 0
+    },
+    {
+      "Orientation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "W": 32767
+      },
+      "Position": {
+        "X": -753,
+        "Y": -434,
+        "Z": 1968
+      },
+      "Flags": "kBounds_PrimVsWorld, kBounds_Sphere",
+      "HalfDimensions": {
+        "X": 328,
+        "Y": 328,
+        "Z": 328
+      },
+      "NumChildren": 0,
+      "PCloudIndex": 255,
+      "Pivot": {
+        "X": -752,
+        "Y": 182,
+        "Z": 1894
+      },
+      "ChildIndex": -1,
+      "AttributeName": 0,
+      "Surface": 2581226801,
+      "NameHash": 0
+    },
+    {
+      "Orientation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "W": 32767
+      },
+      "Position": {
+        "X": 755,
+        "Y": -46,
+        "Z": 1971
+      },
+      "Flags": "kBounds_PrimVsWorld, kBounds_Sphere",
+      "HalfDimensions": {
+        "X": 328,
+        "Y": 328,
+        "Z": 328
+      },
+      "NumChildren": 0,
+      "PCloudIndex": 255,
+      "Pivot": {
+        "X": 756,
+        "Y": 570,
+        "Z": 1896
+      },
+      "ChildIndex": -1,
+      "AttributeName": 0,
+      "Surface": 2581226801,
+      "NameHash": 0
+    },
+    {
+      "Orientation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "W": 32767
+      },
+      "Position": {
+        "X": -753,
+        "Y": -46,
+        "Z": 1968
+      },
+      "Flags": "kBounds_PrimVsWorld, kBounds_Sphere",
+      "HalfDimensions": {
+        "X": 328,
+        "Y": 328,
+        "Z": 328
+      },
+      "NumChildren": 0,
+      "PCloudIndex": 255,
+      "Pivot": {
+        "X": -752,
+        "Y": 570,
+        "Z": 1894
+      },
+      "ChildIndex": -1,
+      "AttributeName": 0,
+      "Surface": 2581226801,
+      "NameHash": 0
+    },
+    {
+      "Orientation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "W": 32767
+      },
+      "Position": {
+        "X": 470,
+        "Y": 455,
+        "Z": 111
+      },
+      "Flags": "kBounds_PrimVsWorld, kBounds_Sphere",
+      "HalfDimensions": {
+        "X": 236,
+        "Y": 236,
+        "Z": 236
+      },
+      "NumChildren": 0,
+      "PCloudIndex": 255,
+      "Pivot": {
+        "X": 471,
+        "Y": 1072,
+        "Z": 37
+      },
+      "ChildIndex": -1,
+      "AttributeName": 0,
+      "Surface": 2581226801,
+      "NameHash": 0
+    },
+    {
+      "Orientation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "W": 32767
+      },
+      "Position": {
+        "X": -469,
+        "Y": 455,
+        "Z": 110
+      },
+      "Flags": "kBounds_PrimVsWorld, kBounds_Sphere",
+      "HalfDimensions": {
+        "X": 236,
+        "Y": 236,
+        "Z": 236
+      },
+      "NumChildren": 0,
+      "PCloudIndex": 255,
+      "Pivot": {
+        "X": -468,
+        "Y": 1072,
+        "Z": 35
+      },
+      "ChildIndex": -1,
+      "AttributeName": 0,
+      "Surface": 2581226801,
+      "NameHash": 0
+    }
+  ],
+  "PointClouds": [
+    {
+      "Vertices": [
+        {
+          "X": -0.7886906,
+          "Y": 0.168830872,
+          "Z": -2.110106,
+          "W": 0.0
+        },
+        {
+          "X": -0.5224997,
+          "Y": 0.5572037,
+          "Z": -1.49544513,
+          "W": 0.0
+        },
+        {
+          "X": -0.571503162,
+          "Y": 0.6095721,
+          "Z": 0.009679899,
+          "W": 0.0
+        },
+        {
+          "X": -0.7495255,
+          "Y": 0.183732152,
+          "Z": 0.875808954,
+          "W": 0.0
+        },
+        {
+          "X": -0.896575,
+          "Y": -0.07735288,
+          "Z": 2.11565518,
+          "W": 0.0
+        },
+        {
+          "X": -0.799049139,
+          "Y": -0.5561748,
+          "Z": 2.120889,
+          "W": 0.0
+        },
+        {
+          "X": -0.90177685,
+          "Y": -0.04509908,
+          "Z": 0.009679727,
+          "W": 0.0
+        },
+        {
+          "X": -0.769329369,
+          "Y": -0.603852451,
+          "Z": -2.08730817,
+          "W": 0.0
+        },
+        {
+          "X": 0.7865886,
+          "Y": 0.168830991,
+          "Z": -2.110106,
+          "W": 0.0
+        },
+        {
+          "X": 0.5203976,
+          "Y": 0.5572037,
+          "Z": -1.49544513,
+          "W": 0.0
+        },
+        {
+          "X": 0.5694011,
+          "Y": 0.6095721,
+          "Z": 0.009679958,
+          "W": 0.0
+        },
+        {
+          "X": 0.747423351,
+          "Y": 0.183732331,
+          "Z": 0.8758091,
+          "W": 0.0
+        },
+        {
+          "X": 0.894472659,
+          "Y": -0.07735282,
+          "Z": 2.11565518,
+          "W": 0.0
+        },
+        {
+          "X": 0.796947,
+          "Y": -0.556174755,
+          "Z": 2.120889,
+          "W": 0.0
+        },
+        {
+          "X": 0.9032031,
+          "Y": -0.0855629444,
+          "Z": 0.009679802,
+          "W": 0.0
+        },
+        {
+          "X": 0.7672275,
+          "Y": -0.603852332,
+          "Z": -2.08730817,
+          "W": 0.0
+        }
+      ]
+    }
+  ]
+}

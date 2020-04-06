@@ -1,0 +1,130 @@
+﻿<UserControl x:Class="Aaron.ViewModel.Tabs.CarListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:local="clr-namespace:Aaron.ViewModel.Tabs"
+             xmlns:data="clr-namespace:Aaron.Data"
+             xmlns:fa5="http://schemas.fontawesome.com/icons/"
+             xmlns:componentModel="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             d:DataContext="{d:DesignInstance local:CarListViewModel}"
+             d:DesignStyle="{StaticResource designHelperStyleWhite}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".5*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.Resources>
+            <CollectionViewSource x:Key="CarsSource" Source="{Binding Cars}">
+                <CollectionViewSource.SortDescriptions>
+                    <componentModel:SortDescription PropertyName="CarTypeName" Direction="Ascending"></componentModel:SortDescription>
+                </CollectionViewSource.SortDescriptions>
+            </CollectionViewSource>
+        </Grid.Resources>
+        <ListBox ItemsSource="{Binding Source={StaticResource CarsSource}}" SelectedItem="{Binding Path=SelectedCarRecord, Mode=TwoWay}">
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="{x:Type data:AaronCarRecord}">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock>
+                            <Run Text="{Binding CarTypeName}"></Run>
+                            <Run Text="{Binding UsageType}" FontWeight="Bold"></Run>
+                        </TextBlock>
+                        <!--<TextBlock Text="{Binding CarTypeName}"></TextBlock>
+                        <TextBlock FontWeight="Bold" Text="{Binding UsageType}"></TextBlock>-->
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <TabControl Grid.Column="1" Background="LightGray">
+            <TabControl.Style>
+                <Style TargetType="{x:Type TabControl}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding SelectedCarRecord}" Value="{x:Null}">
+                            <Setter Property="Visibility" Value="Collapsed"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TabControl.Style>
+
+            <TabControl.Resources>
+                <Style TargetType="{x:Type TabItem}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding SelectedCarRecord}" Value="{x:Null}">
+                            <Setter Property="IsEnabled" Value="False"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TabControl.Resources>
+
+            <!-- Car Information tab -->
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <fa5:SvgAwesome Icon="Solid_InfoCircle" 
+                                        Width="16" 
+                                        Height="16"
+                                        Margin="0,0,5,0"></fa5:SvgAwesome>
+                        <TextBlock Text="Info"></TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="BaseCarID: "></TextBlock>
+                            <TextBox Text="{Binding SelectedCarRecord.BaseCarID, Mode=OneWay}" IsReadOnly="True" Width="150"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="PhysicsProfileHash: "></TextBlock>
+                            <TextBox Text="{Binding SelectedCarRecord.PhysicsProfileHash, Mode=OneWay}" IsReadOnly="True" Width="150"></TextBox>
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <!-- Car Collision tab -->
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <fa5:SvgAwesome Icon="Solid_CarAlt"
+                                        Width="16" 
+                                        Height="16"
+                                        Margin="0,0,5,0"></fa5:SvgAwesome>
+                        <TextBlock Text="Collision"></TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <Grid>
+                        <Button Width="300" Height="36">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding SelectedCarRecord.BoundsPack}" Value="{x:Null}">
+                                            <Setter Property="IsEnabled" Value="False"></Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                            <TextBlock FontSize="24" Margin="0,-3,0,0">Open Collision Visualizer</TextBlock>
+                        </Button>
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
+
+            <!-- Car Settings tab -->
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <fa5:SvgAwesome Icon="Solid_Cog" 
+                                        Width="16" 
+                                        Height="16"
+                                        Margin="0,0,5,0"></fa5:SvgAwesome>
+                        <TextBlock Text="Settings"></TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

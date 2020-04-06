@@ -1,0 +1,75 @@
+﻿<Window x:Class="Aaron.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d"
+        Title="About Aaron" Height="400" Width="400" ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner"
+        DataContext="{Binding Path=About, Source={StaticResource Locator}}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="85"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0"
+                    HorizontalAlignment="Center"
+                    Orientation="Horizontal">
+            <Image Source="/nfsmt_logo.png"></Image>
+            <TextBlock VerticalAlignment="Center"
+                       FontSize="36"
+                       FontWeight="Bold"
+                       Margin="10,0,0,0">
+                <Run>Aaron</Run>
+                <Run FontSize="20" Text="{Binding Version}"></Run>
+                <Run></Run>
+            </TextBlock>
+        </StackPanel>
+        <TextBlock Grid.Row="1"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   FontSize="22"
+                   Margin="0,-20,0,0">
+            <Run>by</Run>
+            <Run FontWeight="Bold">heyitsleo</Run>
+        </TextBlock>
+        <StackPanel Grid.Row="3"
+                    Orientation="Vertical"
+                    HorizontalAlignment="Center">
+            <TextBlock FontSize="14"
+                       TextWrapping="WrapWithOverflow"
+                       TextAlignment="Center">
+                <Run FontWeight="Bold">Thanks to:</Run> 
+                <Run>nlgzrgn, berkay2578, 379Felipe and nfsu360</Run>
+            </TextBlock>
+        </StackPanel>
+        <Border Grid.Row="4" BorderBrush="DarkSlateGray" BorderThickness="2">
+            <StackPanel Orientation="Vertical"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                <TextBlock FontSize="14"
+                           TextWrapping="WrapWithOverflow"
+                           TextAlignment="Center">
+                    <Run FontWeight="Bold">Issues:</Run> 
+                    <Hyperlink NavigateUri="https://discord.gg/8tP4kVJ" Command="{Binding OpenDiscordInviteCommand}">Join the NFS Modding Tools chat</Hyperlink>
+                </TextBlock>
+                <TextBlock FontSize="14"
+                           TextWrapping="WrapWithOverflow"
+                           TextAlignment="Center">
+                    <Run FontWeight="Bold">Code:</Run> 
+                    <Hyperlink NavigateUri="https://github.com/NFSTools/Aaron" Command="{Binding OpenGitHubCommand}">View on GitHub</Hyperlink>
+                </TextBlock>
+                <TextBlock FontSize="14"
+                           TextWrapping="WrapWithOverflow"
+                           TextAlignment="Center">
+                    <Run FontWeight="Bold">Copyright heyitsleo 2019-present</Run>
+                </TextBlock>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

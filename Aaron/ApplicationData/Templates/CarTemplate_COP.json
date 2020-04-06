@@ -1,0 +1,2239 @@
+﻿{
+  "Name": "%",
+  "Parts": [
+    {
+      "Name": "%_BASE",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "BASE KIT00"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "BASE",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_FRONT_WINDOW",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 256,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_FRONT_WINDOW"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_FRONT_WINDOW",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 256,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_FRONT_WINDOW"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_BODY",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 512,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_BODY"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_BODY",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 512,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_BODY"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_COP_LIGHTS",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 768,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_COP_LIGHTS"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_COP_LIGHTS",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 768,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_COP_LIGHTS"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_COP_SPOILER",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 1024,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_SPOILER"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_COP_SPOILER",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 1024,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_SPOILER"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_FRONT_WHEEL",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 1280,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_FRONT_TIRE"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_FRONT_WHEEL",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 1280,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_FRONT_TIRE"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_LEFT_BRAKELIGHT",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 1536,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_LEFT_BRAKELIGHT"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_LEFT_BRAKELIGHT",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 1536,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_LEFT_BRAKELIGHT"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_RIGHT_BRAKELIGHT",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 1792,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_RIGHT_BRAKELIGHT"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_RIGHT_BRAKELIGHT",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 1792,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_RIGHT_BRAKELIGHT"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_LEFT_HEADLIGHT",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 2048,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_LEFT_HEADLIGHT"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_LEFT_HEADLIGHT",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 2048,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_LEFT_HEADLIGHT"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_RIGHT_HEADLIGHT",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 2304,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_RIGHT_HEADLIGHT"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_RIGHT_HEADLIGHT",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 2304,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_RIGHT_HEADLIGHT"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_HOOD",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 2560,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_HOOD"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_HOOD",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 2560,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_HOOD"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_BUSHGUARD",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 2816,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_BUSHGUARD"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_BUSHGUARD",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 2816,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_BUSHGUARD"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_FRONT_BUMPER",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 3072,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_FRONT_BUMPER"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_FRONT_BUMPER",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 3072,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_FRONT_BUMPER"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_RIGHT_DOOR",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "DAMAGE0 RIGHT_DOOR"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 3328,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_RIGHT_DOOR"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "01",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 3328,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_RIGHT_DOOR"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_RIGHT_REAR_DOOR",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 3584,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_RIGHT_REAR_DOOR"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_RIGHT_REAR_DOOR",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 3584,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_RIGHT_REAR_DOOR"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_TRUNK",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 3840,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_TRUNK"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_TRUNK",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 3840,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_TRUNK"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_REAR_BUMPER",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 4096,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_REAR_BUMPER"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_REAR_BUMPER",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 4096,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_REAR_BUMPER"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_REAR_LEFT_WINDOW",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 4352,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_REAR_LEFT_WINDOW"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_REAR_LEFT_WINDOW",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 4352,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_REAR_LEFT_WINDOW"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_FRONT_LEFT_WINDOW",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 4608,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_FRONT_LEFT_WINDOW"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "01",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 4608,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_FRONT_LEFT_WINDOW"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_FRONT_RIGHT_WINDOW",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 4864,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_FRONT_RIGHT_WINDOW"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_FRONT_RIGHT_WINDOW",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 4864,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_FRONT_RIGHT_WINDOW"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_REAR_RIGHT_WINDOW",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 5120,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_REAR_RIGHT_WINDOW"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_REAR_RIGHT_WINDOW",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 5120,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_REAR_RIGHT_WINDOW"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_LEFT_DOOR",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 5376,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_LEFT_DOOR"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_LEFT_DOOR",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 5376,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_LEFT_DOOR"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_0_REAR_DOOR",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 5632,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE0_LEFT_REAR_DOOR"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DAMAGE_1_REAR_DOOR",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "DAMAGELEVEL",
+          "Value": 1,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "01"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 5632,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DAMAGE1_LEFT_REAR_DOOR"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_BODY_KIT00",
+      "Attributes": [
+        {
+          "Name": "CV",
+          "Value": 920241303,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LANGUAGEHASH",
+          "Value": 2678708386,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "KITNUMBER",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 5888,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "BODY"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_FRONT_BRAKE",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 6144,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "FRONT_BRAKE"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_REAR_BRAKE",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 9472,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "REAR_BRAKE"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DRIVER",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 12544,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DRIVER"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_KIT00_EXHAUST",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCD "
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 13057,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 3,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "EXHAUST"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_WHEEL",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "STOCK"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 25088,
+          "Strings": []
+        },
+        {
+          "Name": "0xCE7D8DB5",
+          "Value": 23,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "0xEB0101E2",
+          "Value": 20,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "FRONT_TIRE"
+          ]
+        }
+      ]
+    }
+  ]
+}

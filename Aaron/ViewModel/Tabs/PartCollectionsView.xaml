@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="Aaron.ViewModel.Tabs.PartCollectionsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Aaron.ViewModel.Tabs"
+             xmlns:data="clr-namespace:Aaron.Data"
+             xmlns:fa5="http://schemas.fontawesome.com/icons/"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             d:DesignStyle="{StaticResource designHelperStyleWhite}"
+             d:DataContext="{d:DesignInstance local:PartCollectionsViewModel}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".5*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ListBox ItemsSource="{Binding CarPartCollections}" SelectedItem="{Binding Path=SelectedCarPartCollection}">
+            <ListBox.Resources>
+                <ContextMenu x:Key="CollectionContextMenu">
+                    <MenuItem Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type UserControl}}, Path=DataContext.RefreshCollectionCommand}" 
+                              CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type ContextMenu}},
+                                Path=PlacementTarget.DataContext}">
+                        <MenuItem.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <fa5:SvgAwesome Icon="Solid_Sync" Width="16" Height="16"></fa5:SvgAwesome>
+                                <TextBlock>Refresh</TextBlock>
+                            </StackPanel>
+                        </MenuItem.Header>
+                    </MenuItem>
+                </ContextMenu>
+            </ListBox.Resources>
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="{x:Type ListBoxItem}">
+                    <Setter Property="ContextMenu" Value="{StaticResource CollectionContextMenu}"></Setter>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="{x:Type data:AaronCarPartCollection}">
+                    <TextBlock Text="{Binding Path=Name}"></TextBlock>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <DataGrid Grid.Column="1" ItemsSource="{Binding SelectedCarPartCollection.Parts}" 
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  CanUserSortColumns="True"
+                  AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Width="*" Binding="{Binding Path=Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Hash" Width="*" Binding="{Binding Path=Hash, StringFormat=0x\{0:X8\}}" IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTemplateColumn IsReadOnly="True" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="{x:Type data:AaronCarPartRecord}">
+                            <StackPanel Orientation="Horizontal">
+                                <!--<Button Width="Auto"
+                                        Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type UserControl}}, Path=DataContext.EditPartCommand}"
+                                        CommandParameter="{Binding}">
+                                    <fa5:SvgAwesome Icon="Solid_Edit" Width="16" Height="16"/>
+                                </Button>-->
+                                <Button Background="Red" Width="Auto">
+                                    <StackPanel Orientation="Horizontal">
+                                        <fa5:SvgAwesome Icon="Solid_Trash" Foreground="White" Width="16" Height="16"/>
+                                        <TextBlock Text="Delete Part"></TextBlock>
+                                    </StackPanel>
+                                </Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

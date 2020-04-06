@@ -1,0 +1,1258 @@
+﻿{
+  "Name": "%",
+  "Parts": [
+    {
+      "Name": "%_BASE",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "BASE KIT00"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "BASE",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_BODY",
+      "Attributes": [
+        {
+          "Name": "CV",
+          "Value": 2065525817,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "BODY"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 5888,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "BODY"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_FRONT_WINDOW",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "FRONT_WINDOW"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 7680,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "FRONT_WINDOW"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_LEFT_BRAKELIGHT",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "LEFT_BRAKELIGHT"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 8192,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "LEFT_BRAKELIGHT"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_LEFT_BRAKELIGHT_GLASS",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "LEFT_BRAKELIGHT_GLASS"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 8448,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "LEFT_BRAKELIGHT_GLASS"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_LEFT_HEADLIGHT",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "LEFT_HEADLIGHT"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 8704,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "LEFT_HEADLIGHT"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_LEFT_HEADLIGHT_GLASS",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "LEFT_HEADLIGHT_GLASS"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 8960,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "LEFT_HEADLIGHT_GLASS"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_RIGHT_BRAKELIGHT",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "RIGHT_BRAKELIGHT"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 11264,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "RIGHT_BRAKELIGHT"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_RIGHT_BRAKELIGHT_GLASS",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "RIGHT_BRAKELIGHT_GLASS"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 11520,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "RIGHT_BRAKELIGHT_GLASS"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_RIGHT_HEADLIGHT",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "RIGHT_HEADLIGHT"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 11776,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "RIGHT_HEADLIGHT"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_RIGHT_HEADLIGHT_GLASS",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "RIGHT_HEADLIGHT_GLASS"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 12032,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "RIGHT_HEADLIGHT_GLASS"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_DRIVER",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "DRIVER"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 12544,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "DRIVER"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT0",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT0"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 17664,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT0"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT0",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT0"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 17664,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT01"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT0",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT0"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 17664,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT02"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT0",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT0"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 17664,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT03"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT1",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT1"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 17920,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT1"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT2",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT2"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 18176,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT2"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT3",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT3"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 18432,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT3"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT4",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT4"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 18688,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT4"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT5",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT5"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 18944,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT5"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT6",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT6"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 19200,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT6"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT7",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT7"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 19456,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT7"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT8",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT8"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 19712,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT8"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT9",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT9"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 19968,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT9"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT10",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT10"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 20224,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT10"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT11",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT11"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 20480,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT11"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT12",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT12"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 20736,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT12"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT13",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT13"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 20992,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT13"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT14",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT14"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 21248,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT14"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_ATTACHMENT15",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "ATTACHMENT15"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 21504,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "ATTACHMENT15"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "%_WHEEL",
+      "Attributes": [
+        {
+          "Name": "LOD_CHARACTERS_OFFSET",
+          "Strings": [
+            "ABCDE"
+          ]
+        },
+        {
+          "Name": "LOD_NAME_PREFIX_SELECTOR",
+          "Value": 0,
+          "Strings": []
+        },
+        {
+          "Name": "NAME_OFFSET",
+          "Strings": [
+            "WHEEL"
+          ]
+        },
+        {
+          "Name": "PARTID_UPGRADE_GROUP",
+          "Value": 25088,
+          "Strings": []
+        },
+        {
+          "Name": "MAX_LOD",
+          "Value": 4,
+          "Strings": []
+        },
+        {
+          "Name": "LOD_BASE_NAME",
+          "Strings": [
+            "KIT00",
+            "FRONT_TIRE"
+          ]
+        }
+      ]
+    }
+  ]
+}
