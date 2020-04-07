@@ -4,7 +4,8 @@
         xmlns:fa5="http://schemas.fontawesome.com/icons/"
         Title="Add Car" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen"
         ContentRendered="Window_ContentRendered"
-        DataContext="{Binding Source={StaticResource Locator}, Path=AddCar}">
+        DataContext="{Binding Source={StaticResource Locator}, Path=AddCar}"
+        FocusManager.FocusedElement="{Binding ElementName=txtCarName}">
     <Grid Margin="15">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
