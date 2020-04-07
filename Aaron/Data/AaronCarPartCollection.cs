@@ -20,6 +20,8 @@ namespace Aaron.Data
         /// </summary>
         public string Name { get; set; }
 
+        public uint Priority { get; set; }
+
         /// <summary>
         /// The parts in the collection.
         /// </summary>

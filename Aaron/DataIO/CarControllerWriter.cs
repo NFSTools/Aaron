@@ -280,7 +280,11 @@ namespace Aaron.DataIO
             // aka .OrderBy().ThenBy()
 
             // The list of car part collections, ordered in ascending order by their hash.
-            var sortedCollectionList = _carPartService.GetCarPartCollections().DistinctBy(c => c.Hash).OrderBy(c => c.Hash).ToList();
+            var sortedCollectionList = _carPartService.GetCarPartCollections()
+                .DistinctBy(c => c.Hash)
+                .OrderByDescending(c => c.Priority)
+                .ThenBy(c => c.Hash)
+                .ToList();
 
             // The entire list of car parts, ordered as they would appear in [04 46 03 00].
             var partArray = sortedCollectionList.SelectMany(c => c.Parts).ToList();
@@ -315,7 +319,7 @@ namespace Aaron.DataIO
                 // The list of all part attributes.
                 var attributes = partArray.OrderBy(p => p.Hash).SelectMany(p => p.Attributes).ToList();
                 // The list of UNIQUE part attributes.
-                var distinctAttributes = attributes.DistinctBy(a=>a.GetHashCode()).ToList();
+                var distinctAttributes = attributes.DistinctBy(a => a.GetHashCode()).ToList();
                 // The list of racer cars.
                 var racerList = _carService.GetCarsByType(CarUsageType.Racing);
                 // The list of strings.
@@ -448,7 +452,7 @@ namespace Aaron.DataIO
                                         throw new Exception("string 1 out of bounds");
                                     }
 
-                                    offs1 = (ushort) offs1i;
+                                    offs1 = (ushort)offs1i;
                                 }
                                 if (aaronCarPartAttribute.Strings.Count > 1 && aaronCarPartAttribute.Strings[1] != "")
                                 {
@@ -494,10 +498,12 @@ namespace Aaron.DataIO
                                 if (aaronCarPartAttribute.Value is bool b)
                                 {
                                     newAttrib.iParam = b ? 1 : 0;
-                                } else if (aaronCarPartAttribute.Value is long u)
+                                }
+                                else if (aaronCarPartAttribute.Value is long u)
                                 {
                                     newAttrib.uParam = unchecked((uint)u);
-                                } else if (aaronCarPartAttribute.Value is double f)
+                                }
+                                else if (aaronCarPartAttribute.Value is double f)
                                 {
                                     newAttrib.fParam = Convert.ToSingle(f);
                                 }
