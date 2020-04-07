@@ -239,7 +239,7 @@ namespace Aaron.DataIO
 
             foreach (var aaronDataTable in _dataTableService.GetDataTables())
             {
-                PaddingAlignment(0x80);
+                PaddingAlignment(0x10);
                 BeginChunk(0x3CE14);
                 NextAlignment(0x10);
 
