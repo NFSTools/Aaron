@@ -130,28 +130,28 @@ namespace Aaron.Services.Implementations
                 switch (item)
                 {
                     case AaronCarRecord aaronCarRecord:
-                        File.WriteAllText(Path.Combine(aaronProject.CarsDirectory, aaronCarRecord.CarTypeName + ".json"),
+                        File.WriteAllText(Path.Combine(aaronProject.Directory, aaronProject.CarsDirectory, aaronCarRecord.CarTypeName + ".json"),
                             Serialization.Serialize(aaronCarRecord));
                         break;
                     case AaronCarPartCollection carPartCollection:
-                        var fileName = Path.Combine(aaronProject.CarPartsDirectory, $"{carPartCollection.Name}.json");
+                        var fileName = Path.Combine(aaronProject.Directory, aaronProject.CarPartsDirectory, $"{carPartCollection.Name}.json");
                         var serialized = Serialization.Serialize(carPartCollection);
 
                         File.WriteAllText(fileName, serialized);
                         break;
                     case AaronPresetCar aaronPresetCar:
                         File.WriteAllText(
-                            Path.Combine(aaronProject.PresetCarsDirectory, $"{aaronPresetCar.PresetName}.xml"),
+                            Path.Combine(aaronProject.Directory, aaronProject.PresetCarsDirectory, $"{aaronPresetCar.PresetName}.xml"),
                             PresetConverter.ConvertAaronPresetToServerXML(aaronPresetCar).DataContractSerializeObject());
                         break;
                     case AaronPresetSkinRecord aaronPresetSkinRecord:
                         File.WriteAllText(
-                            Path.Combine(aaronProject.PresetSkinsDirectory, $"{aaronPresetSkinRecord.PresetName}.json"),
+                            Path.Combine(aaronProject.Directory, aaronProject.PresetSkinsDirectory, $"{aaronPresetSkinRecord.PresetName}.json"),
                             Serialization.Serialize(aaronPresetSkinRecord));
                         break;
                     case AaronDataTable aaronDataTable:
                         File.WriteAllText(
-                            Path.Combine(aaronProject.DataTablesDirectory, $"{aaronDataTable.Name}.json"),
+                            Path.Combine(aaronProject.Directory, aaronProject.DataTablesDirectory, $"{aaronDataTable.Name}.json"),
                             Serialization.Serialize(aaronDataTable));
                         break;
                 }
@@ -162,8 +162,11 @@ namespace Aaron.Services.Implementations
         {
             CloseProject();
 
+            var dir = Path.GetDirectoryName(file) ?? "";
             var project = Serialization.Deserialize<AaronProject>(File.ReadAllText(file));
             project.Path = file;
+            project.Directory = dir;
+            project.OutputFilePath = Path.Combine(dir, project.OutputFilePath);
 
             if (project.Version != AaronProjectVersion)
             {
@@ -176,7 +179,7 @@ namespace Aaron.Services.Implementations
             DebugTiming.BeginTiming("LoadCars");
 
             // load cars
-            foreach (var carFilePath in Directory.GetFiles(project.CarsDirectory, "*.json"))
+            foreach (var carFilePath in Directory.GetFiles(Path.Combine(dir, project.CarsDirectory), "*.json"))
             {
                 _carService.AddCar(Serialization.Deserialize<AaronCarRecord>(File.ReadAllText(carFilePath)));
             }
@@ -185,7 +188,7 @@ namespace Aaron.Services.Implementations
             DebugTiming.BeginTiming("LoadCarParts");
 
             // load car part
-            foreach (var carPartFilePath in Directory.GetFiles(project.CarPartsDirectory, "*.json"))
+            foreach (var carPartFilePath in Directory.GetFiles(Path.Combine(dir, project.CarPartsDirectory), "*.json"))
             {
                 var aaronCarPartCollection = Serialization.Deserialize<AaronCarPartCollection>(File.ReadAllText(carPartFilePath));
                 _carPartService.AddCarPartCollection(
@@ -197,7 +200,7 @@ namespace Aaron.Services.Implementations
             DebugTiming.BeginTiming("LoadPresets");
 
             // load presets
-            foreach (var presetCarFilePath in Directory.GetFiles(project.PresetCarsDirectory, "*.xml"))
+            foreach (var presetCarFilePath in Directory.GetFiles(Path.Combine(dir, project.PresetCarsDirectory), "*.xml"))
             {
                 var convertServerXmlToAaronPreset = PresetConverter.ConvertServerXMLToAaronPreset(
                     File.ReadAllText(presetCarFilePath).DataContractDeserializeObject<OwnedCarTrans>());
@@ -211,7 +214,7 @@ namespace Aaron.Services.Implementations
 
             DebugTiming.BeginTiming("LoadPresetSkins");
 
-            foreach (var presetSkinFilePath in Directory.GetFiles(project.PresetSkinsDirectory, "*.json"))
+            foreach (var presetSkinFilePath in Directory.GetFiles(Path.Combine(dir, project.PresetSkinsDirectory), "*.json"))
             {
                 _presetSkinService.AddPresetSkin(
                     Serialization.Deserialize<AaronPresetSkinRecord>(File.ReadAllText(presetSkinFilePath)));
@@ -221,7 +224,7 @@ namespace Aaron.Services.Implementations
 
             DebugTiming.BeginTiming("LoadDataTables");
 
-            foreach (var dataTableFilePath in Directory.GetFiles(project.DataTablesDirectory, "*.json"))
+            foreach (var dataTableFilePath in Directory.GetFiles(Path.Combine(dir, project.DataTablesDirectory), "*.json"))
             {
                 _dataTableService.AddDataTable(
                     Serialization.Deserialize<AaronDataTable>(File.ReadAllText(dataTableFilePath)));
@@ -229,7 +232,7 @@ namespace Aaron.Services.Implementations
 
             DebugTiming.EndTiming("LoadDataTables");
 
-            using (var namesFileStream = File.OpenRead(Path.Combine(Path.GetDirectoryName(file), "strings.json")))
+            using (var namesFileStream = File.OpenRead(Path.Combine(dir, "strings.json")))
             {
                 foreach (var s in Serialization.Deserialize<List<string>>(
                     namesFileStream))

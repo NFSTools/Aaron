@@ -15,6 +15,8 @@ namespace Aaron.Data
     {
         [JsonIgnore]
         public string Path { get; set; }
+        [JsonIgnore]
+        public string Directory { get; set; }
 
         [JsonProperty]
         public uint Version { get; set; }

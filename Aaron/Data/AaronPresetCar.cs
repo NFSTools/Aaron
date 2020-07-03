@@ -13,7 +13,7 @@ namespace Aaron.Data
     public class AaronPresetCar : ITracksChanges
     {
         /// <summary>
-        /// The VLT collection name of the car being used.
+        /// The model name of the car.
         /// </summary>
         /// <example>supra</example>
         [DataMember]
@@ -25,6 +25,12 @@ namespace Aaron.Data
         /// <example>supra_DRAG_1</example>
         [DataMember]
         public string PresetName { get; set; }
+
+        /// <summary>
+        /// The pvehicle collection hash of the car.
+        /// </summary>
+        [DataMember]
+        public uint PhysicsProfileHash { get; set; }
 
         /// <summary>
         /// The installed visual parts. 123 slots are available.

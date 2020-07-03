@@ -74,6 +74,7 @@ namespace Aaron.DataIO
             AaronPresetCar aaronPresetCar = new AaronPresetCar();
             aaronPresetCar.CarName = fePresetCar.CarCollectionName;
             aaronPresetCar.PresetName = fePresetCar.PresetName;
+            aaronPresetCar.PhysicsProfileHash = ~(fePresetCar.VehicleKey * 0x0CF96D9C3);
 
             aaronPresetCar.Paints = new SynchronizedObservableCollection<AaronPresetCarPaint>();
             aaronPresetCar.PerformanceParts = new SynchronizedObservableCollection<AaronPresetCarPerfPart>();
@@ -135,7 +136,7 @@ namespace Aaron.DataIO
             presetCar.InheritedFields = new byte[8];
             presetCar.CarCollectionName = aaronPresetCar.CarName;
             presetCar.PresetName = aaronPresetCar.PresetName;
-            presetCar.VehicleKey = ~Hashing.JenkinsHash(aaronPresetCar.CarName) * 0x57A5DEEB;
+            presetCar.VehicleKey = ~aaronPresetCar.PhysicsProfileHash * 0x57A5DEEB;
             presetCar.InverseThing = 0xA85A2115;
             presetCar.VisualPartHashes = new uint[123];
             presetCar.PaintsSet = new bool[8];
@@ -277,7 +278,7 @@ namespace Aaron.DataIO
             ownedCarTrans.CustomCar.Name = aaronPresetCar.CarName;
             ownedCarTrans.CustomCar.BaseCar = unchecked((int)Hashing.BinHash(aaronPresetCar.CarName.ToUpperInvariant()));
             ownedCarTrans.CustomCar.IsPreset = true;
-            ownedCarTrans.CustomCar.PhysicsProfileHash = unchecked((int)Hashing.JenkinsHash(aaronPresetCar.CarName));
+            ownedCarTrans.CustomCar.PhysicsProfileHash = unchecked((int)aaronPresetCar.PhysicsProfileHash);
 
             ownedCarTrans.CustomCar.Paints = new List<CustomPaintTrans>();
             ownedCarTrans.CustomCar.PerformanceParts = new List<PerformancePartTrans>();
@@ -350,6 +351,7 @@ namespace Aaron.DataIO
             aaronPresetCar.Vinyls = new SynchronizedObservableCollection<AaronPresetCarVinyl>();
             aaronPresetCar.VisualParts = new SynchronizedObservableCollection<AaronPresetCarVisualPart>();
             aaronPresetCar.SkillModSlotCount = (uint)ownedCarTrans.CustomCar.SkillModSlotCount;
+            aaronPresetCar.PhysicsProfileHash = unchecked((uint)ownedCarTrans.CustomCar.PhysicsProfileHash);
 
             for (int i = 0; i < 8; i++)
             {
