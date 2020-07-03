@@ -181,7 +181,7 @@ namespace Aaron.ViewModel
             }
 
             carPartCollection.Changed = true;
-            //carPartCollection.Priority = (uint) _carPartService.GetCarPartCollections().Count + 1;
+            carPartCollection.Priority = 0;
             _carPartService.AddCarPartCollection(carPartCollection);
 
             // add preset skin
