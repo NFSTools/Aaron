@@ -87,7 +87,7 @@ namespace Aaron.ViewModel.Tabs
                     () => this._carPartService.ReplaceCarPartCollection(
                         obj.Hash,
                         Serialization.Deserialize<AaronCarPartCollection>(
-                            File.ReadAllText(Path.Combine(project.CarPartsDirectory, $"{obj.Name}.json")))),
+                            File.ReadAllText(Path.Combine(project.Directory, project.CarPartsDirectory, $"{obj.Name}.json")))),
                     this.reloadingCollectionDialogOptions,
                     out var newCollection))
                 {
