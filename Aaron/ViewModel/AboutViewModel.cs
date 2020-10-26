@@ -31,7 +31,7 @@ namespace Aaron.ViewModel
         {
             get
             {
-                return new RelayCommand(() => Process.Start("https://github.com/NFSTools/Aaron"));
+                return new RelayCommand(() => Process.Start("https://github.com/NFSTools/AaronLegacy"));
             }
         }
 
