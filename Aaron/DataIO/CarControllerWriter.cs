@@ -126,7 +126,7 @@ namespace Aaron.DataIO
 
             EndChunk();
 
-            PaddingAlignment(0x10);
+            PaddingAlignment(0x8);
 
             this.GenerateCarPartData(progress);
 
