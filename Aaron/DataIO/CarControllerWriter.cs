@@ -24,7 +24,7 @@ namespace Aaron.DataIO
         private readonly IPresetSkinService _presetSkinService;
         private readonly IDataTableService _dataTableService;
 
-        public CarControllerWriter(Stream stream) : base(stream)
+        public CarControllerWriter(Stream stream, bool compress) : base(stream, compress)
         {
             _projectService = ServiceLocator.Current.GetInstance<IProjectService>();
             _carService = ServiceLocator.Current.GetInstance<ICarService>();
@@ -34,7 +34,8 @@ namespace Aaron.DataIO
             _dataTableService = ServiceLocator.Current.GetInstance<IDataTableService>();
         }
 
-        public CarControllerWriter(string file) : this(File.Open(file, FileMode.Create, FileAccess.ReadWrite))
+        public CarControllerWriter(string file, bool compress = true) : this(
+            File.Open(file, FileMode.Create, FileAccess.ReadWrite), compress)
         {
         }
 

@@ -35,6 +35,7 @@
                 </MenuItem>
                 <Separator/>
                 <MenuItem Header="Save" Command="{Binding SaveCommand}" IsEnabled="{Binding CanDoProjectActions}"/>
+                <MenuItem Header="Save RAW" Command="{Binding SaveRawCommand}" IsEnabled="{Binding CanDoProjectActions}"/>
                 <MenuItem Header="Save Project" Command="{Binding SaveProjectCommand}" IsEnabled="{Binding CanDoProjectActions}"/>
                 <Separator/>
                 <MenuItem Header="Close" Command="{Binding CloseCommand}" IsEnabled="{Binding CanDoProjectActions}"/>

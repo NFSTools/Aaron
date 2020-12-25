@@ -11,13 +11,15 @@ namespace Aaron.Game
     /// </summary>
     public abstract class ChunkWriter : IDisposable
     {
+        private readonly bool _compress;
         protected Stream Stream;
         protected BinaryWriter Writer;
 
         private readonly Stack<Chunk> _chunks = new Stack<Chunk>();
 
-        protected ChunkWriter(Stream stream)
+        protected ChunkWriter(Stream stream, bool compress = true)
         {
+            _compress = compress;
             SetStream(stream);
         }
 
@@ -39,9 +41,19 @@ namespace Aaron.Game
 
             MemoryStream ms = (MemoryStream)this.Stream;
 
-            File.WriteAllBytes("GlobalC_gen.bin", ms.ToArray());
+            if (_compress)
+            {
+                BlockCompression.WriteBlockFile(origStream, ms.ToArray());
+            }
+            else
+            {
+                ms.CopyTo(origStream);
+            }
 
-            BlockCompression.WriteBlockFile(origStream, ms.ToArray());
+            this.Stream = origStream;
+
+            //File.WriteAllBytes("GlobalC_gen.bin", ms.ToArray());
+            //BlockCompression.WriteBlockFile(origStream, ms.ToArray());
         }
 
         protected abstract void Write(IProgress<string> progress = null);

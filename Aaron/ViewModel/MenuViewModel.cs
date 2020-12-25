@@ -78,6 +78,7 @@ namespace Aaron.ViewModel
         }
 
         public RelayCommand SaveCommand { get; }
+        public RelayCommand SaveRawCommand { get; }
         public RelayCommand SaveProjectCommand { get; }
         public RelayCommand AddCarCommand { get; }
 
@@ -91,6 +92,7 @@ namespace Aaron.ViewModel
             OpenCommand = new RelayCommand(DoOpenCommand);
             OpenProjectCommand = new RelayCommand(DoOpenProjectCommand);
             SaveCommand = new RelayCommand(DoSaveCommand);
+            SaveRawCommand = new RelayCommand(DoSaveRawCommand);
             SaveProjectCommand = new RelayCommand(DoSaveProjectCommand);
             AddCarCommand = new RelayCommand(DoAddCarCommand);
             AboutCommand = new RelayCommand(DoAboutCommand);
@@ -125,19 +127,32 @@ namespace Aaron.ViewModel
 
         private void DoSaveCommand()
         {
-            if (_progressDialogService.TryExecute(RunSaveProcess, _progressOptionsSavingGlobalC, out _))
+            if (_progressDialogService.TryExecute(RunSaveProcess(true), 
+                _progressOptionsSavingGlobalC, out _))
             {
                 this.MessengerInstance.Send(new AlertMessage(AlertType.Information, "Saved!"));
             }
         }
 
-        private bool RunSaveProcess(IProgress<string> progress)
+        private void DoSaveRawCommand()
         {
-            using (var ccw = new CarControllerWriter(_projectService.GetCurrentProject().OutputFilePath))
+            if (_progressDialogService.TryExecute(RunSaveProcess(false), 
+                _progressOptionsSavingGlobalC, out _))
             {
-                ccw.DoWrite(progress);
-                return true;
+                this.MessengerInstance.Send(new AlertMessage(AlertType.Information, "Saved!"));
             }
+        }
+
+        private Func<IProgress<string>, bool> RunSaveProcess(bool compress)
+        {
+            return (prog) =>
+            {
+                using (var ccw = new CarControllerWriter(_projectService.GetCurrentProject().OutputFilePath, compress))
+                {
+                    ccw.DoWrite(prog);
+                    return true;
+                }
+            };
         }
 
         private void HandleProjectMessage(ProjectMessage obj)
@@ -229,9 +244,9 @@ namespace Aaron.ViewModel
             try
             {
 #endif
-                _projectService.LoadProject(filename);
+            _projectService.LoadProject(filename);
 
-                return true;
+            return true;
 #if !DEBUG
 
             }
