@@ -48,7 +48,13 @@ namespace Aaron.Data
             {
                 int hash = 0;
                 hash ^= (int)(Hash * 397);
-                hash ^= (int)(GetValueHashCode() * 397);
+                //hash ^= (int)(GetValueHashCode() * 397);
+
+                //if (Strings.Count == 0)
+                {
+                    hash ^= (int)(GetValueHashCode() * 397);
+                }
+
                 hash ^= (int)(GetStringsHashCode() * 397);
 
                 return hash;
@@ -80,10 +86,16 @@ namespace Aaron.Data
                 return BitConverter.ToInt32(BitConverter.GetBytes(f), 0);
             }
 
+
             if (Value is CarPartID cpi)
             {
-                return (int)cpi;
+                return (int) cpi;
             }
+
+            //if (this.Hash == 0x8C185134)
+            //{
+            //    return unchecked((int)Hashing.FilteredBinHash((string)this.Value));
+            //}
 
             return Value?.GetHashCode() ?? 0;
         }

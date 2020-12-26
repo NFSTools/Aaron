@@ -387,52 +387,24 @@ namespace Aaron.DataIO
                 }
 
                 Dictionary<uint, int> partTags = new Dictionary<uint, int>();
-                var hashToTagMap = new Dictionary<int, int>();
-                var hashToAttribsMap = new Dictionary<int, List<AaronCarPartAttribute>>();
-                var partTag = 0;
-                foreach (var part in partArray)
-                {
-                    var attribListCode = AttributeListHashCode(part.Attributes);
-
-                    if (!hashToTagMap.ContainsKey(attribListCode))
-                    {
-                        hashToTagMap[attribListCode] = partTag;
-                        partTag += part.Attributes.Count + 1;
-                    }
-
-                    partTags[part.Hash] = hashToTagMap[attribListCode];
-                    hashToAttribsMap[attribListCode] = new List<AaronCarPartAttribute>(part.Attributes);
-                }
+                int partTag = 0;
 
                 {
                     // Generate attribute offset tables
                     BeginChunk(0x3460C);
                     var distinctParts = partArray.DistinctBy(p => p.Hash).ToList();
-                    ISet<int> written = new HashSet<int>();
-                    foreach (var part in distinctParts)
+                    foreach (var aaronCarPartRecord in distinctParts)
                     {
-                        var hashcode = AttributeListHashCode(part.Attributes);
+                        partTags[aaronCarPartRecord.Hash] = partTag;
+                        Writer.Write((ushort)aaronCarPartRecord.Attributes.Count);
 
-                        if (written.Add(hashcode))
+                        foreach (var aaronCarPartAttribute in aaronCarPartRecord.Attributes)
                         {
-                            Writer.Write((ushort)part.Attributes.Count);
-
-                            foreach (var attribute in part.Attributes)
-                                Writer.Write((ushort)attributeIndexDictionary[attribute.GetHashCode()]);
+                            Writer.Write((ushort)attributeIndexDictionary[aaronCarPartAttribute.GetHashCode()]);
                         }
+
+                        partTag += aaronCarPartRecord.Attributes.Count + 1;
                     }
-                    //foreach (var aaronCarPartRecord in distinctParts)
-                    //{
-                    //    partTags[aaronCarPartRecord.Hash] = partTag;
-                    //    Writer.Write((ushort)aaronCarPartRecord.Attributes.Count);
-
-                    //    foreach (var aaronCarPartAttribute in aaronCarPartRecord.Attributes)
-                    //    {
-                    //        Writer.Write((ushort)attributeIndexDictionary[aaronCarPartAttribute.GetHashCode()]);
-                    //    }
-
-                    //    partTag += aaronCarPartRecord.Attributes.Count + 1;
-                    //}
                     NextAlignment(4);
                     EndChunk();
                 }
@@ -608,12 +580,6 @@ namespace Aaron.DataIO
             }
 
             EndChunk();
-        }
-        private int AttributeListHashCode(IEnumerable<AaronCarPartAttribute> attributes)
-        {
-            var res = 0x2D2816FE;
-            foreach (var item in attributes) res = res * 31 + item.GetHashCode();
-            return res;
         }
     }
 }
